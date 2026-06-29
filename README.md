@@ -29,15 +29,14 @@ Rock-Paper-Scissors-Game/
 
 ## 🎯 How to Play
 
-1. Open `index.html` in your browser.
-2. Choose one of the three options:
+1. Choose one of the three options:
    - 🪨 Rock
    - 📄 Paper
    - ✂️ Scissors
-3. The computer will randomly select its move.
-4. The result will be displayed instantly.
-5. Scores are updated automatically.
-6. Click **Restart** to reset the game.
+2. The computer will randomly select its move.
+3. The result will be displayed instantly.
+4. Scores are updated automatically.
+5. Click **Restart** to reset the game.
 
 ## 💡 Features Included
 
