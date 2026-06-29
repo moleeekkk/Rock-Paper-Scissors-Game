@@ -1,0 +1,147 @@
+.loader {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: rgb(127, 129, 255);
+  z-index: 1;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 92vh;
+  width: 100vw;
+  background-color: #fec700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: linear 0.3s;
+}
+
+nav {
+  height: 8vh;
+  background-color: #fec700;
+  border-bottom: 1px solid #02462e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+  transition: linear 0.3s;
+}
+
+.night-mode-container {
+  height: 25px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: #02462e;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3px;
+  position: relative;
+  transition: linear 0.3s;
+}
+
+.night-mode-ball {
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  background-color: #fec700;
+  position: relative;
+  transition: linear 0.3s;
+}
+
+.main {
+  height: auto;
+  width: auto;
+  border: 3px solid #02462e;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  transition: linear 0.3s;
+}
+
+.rps {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  border: none;
+  background-color: #02462e;
+  color: #fec700;
+  transition: linear 0.3s;
+}
+
+.score {
+  height: 80px;
+  width: 100%;
+  background-color: #02462e;
+  margin-top: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  transition: linear 0.3s;
+}
+
+.bord {
+  height: 120px;
+}
+
+.score h4,
+.score h4 span {
+  color: #fec700;
+  margin: 10px;
+  transition: linear 0.3s;
+}
+
+.win {
+  height: 40px;
+  width: 100%;
+  background-color: #02462e;
+  margin-top: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: linear 0.3s;
+}
+
+.win h4 {
+  color: #fec700;
+  transition: linear 0.3s;
+}
+
+.ctrl-btn {
+  height: 40px;
+  width: 100px;
+  background-color: #02462e;
+  color: #fec700;
+  margin: 15px;
+  border: none;
+  border-radius: 10px;
+  transition: linear 0.3s;
+}
+
+@media (max-width: 360px) {
+  .main .option input {
+    height: 80px;
+    width: 80px;
+  }
+
+  .main {
+    width: 300px;
+  }
+  .score,
+  .win {
+    width: 90%;
+  }
+}

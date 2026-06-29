@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="nav-item"></div>
+        <div class="nav-item">
+            <div class="night-mode-container" onclick="changeMode()" id="night-mode">
+                <div class="night-mode-ball" id="ball"></div>
+            </div>
+        </div>
+    </nav>
+    <div class="container" id="container">
+        <div class="main" id="main">
+            <div class="option">
+                <input type="button" id="b1" class="rps" onclick="calculateScore('rock')" value="ROCK">
+                <input type="button" id="b2" class="rps" onclick="calculateScore('paper')" value="PAPER">
+                <input type="button" id="b3" class="rps" onclick="calculateScore('scissor')" value="SCISSOR">
+            </div>
+            <div class="score" id="score">
+                <h4 id="score1">YOU SELECTED : <span id="player"></span></h4>
+                <h4 id="score2">COMPUTER SELECTED : <span id="comp"></span></h4>
+            </div>
+
+            <div class="win">
+                <h4 id="win">YOU/COMPUTER WIN</h4>
+            </div>
+
+            <div class="score bord" id="bord">
+                <h4 id="bord1">YOU WIN : <span id="pwin">00</span></h4>
+                <h4 id="bord2">COMPUTER WIN : <span id="cwin">00</span></h4>
+                <h4 id="bord3">TIE MATCHES : <span id="tie">00</span></h4>
+            </div>
+            <div class="controls">
+                <button class="ctrl-btn" id="restart" onclick="restart()">RESTART</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
